@@ -20,7 +20,7 @@ while RPL.digitalRead(sensor_R) and RPL.digitalRead(sensor_M) and RPL.digitalRea
     RPL.servoWrite(motorR, 1000)
     RPL.servoWrite(motorL, 2000)
     PTW.post()
-    if RPL.digitalRead(sensor_R) or RPL.digitalRead(sensor_M) or RPL.digitalRead(sensor_L) =! 1:
+    if RPL.digitalRead(sensor_R) or RPL.digitalRead(sensor_M) or RPL.digitalRead(sensor_L) == 0:
         break
 
 while RPL.digitalRead(sensor_R) == 0:
